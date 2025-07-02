@@ -34,8 +34,8 @@ jobs:
       - name: Build Expo IPA
         run: |
           cd ios
-          xcodebuild -scheme reacttube -workspace reacttube.xcworkspace -configuration release archive -archivePath reacttube.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
-          ../scripts/xcarchive_to_ipa.sh reacttube.xcarchive
+          xcodebuild -scheme ReactTube -workspace ReactTube.xcworkspace -configuration release archive -archivePath ReactTube.xcarchive CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+          ../scripts/xcarchive_to_ipa.sh ReactTube.xcarchive
       - name: Upload IPA
         uses: actions/upload-artifact@v4
         with:

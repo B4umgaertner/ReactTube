@@ -49,7 +49,7 @@ Open the `app.json` file in your project and set the isTV settings for tvOS depl
 {
   "expo": {
     "name": "ReactTube",
-    "slug": "reacttube",
+    "slug": "ReactTube",
     "plugins": [
       [
         "@react-native-tvos/config-tv",

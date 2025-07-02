@@ -68,8 +68,8 @@
       ],
       "expo-sqlite"
     ],
-    "name": "reacttube",
-    "slug": "reacttube",
+    "name": "ReactTube",
+    "slug": "ReactTube",
     "version": "0.3.0",
     "userInterfaceStyle": "dark",
     "primaryColor": "#556BFD",
