@@ -59,24 +59,9 @@ export default function MetadataContainer({
             active={metadata.disliked}
           />
           <MetadataButton
-            iconType={"material-community"}
-            iconName={"playlist-plus"}
-            onPress={metadata.onSaveVideo}
-          />
-          <MetadataButton
-            iconType={"antdesign"}
-            iconName={"stepbackward"}
-            onPress={onJumpToStart}
-          />
-          <MetadataButton
-            iconType={"font-awesome"}
-            iconName={"refresh"}
-            onPress={metadata.onRefresh}
-          />
-          <MetadataButton
-            iconType={"feather"}
-            iconName={"settings"}
-            onPress={() => navigation.navigate("VideoPlayerSettings")}
+            iconType={"MaterialIcons"}
+            iconName={"speed"}
+            onPress={() => navigation.navigate("VideoPlayerPlaySpeed")}
           />
         </View>
       </View>

@@ -5,7 +5,7 @@ import {VideoMenuContainer} from "@/components/general/VideoMenuContainer";
 import {VideoMenuTextItem} from "@/components/video/videoPlayer/settings/VideoMenuTextItem";
 import {useVideoPlayerSettings} from "@/components/video/videoPlayer/settings/VideoPlayerSettingsContext";
 
-const speeds = [0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2];
+const speeds = [1, 1.25, 1.5, 1.75, 2, 2.17, 2.25, 2.5];
 
 export function VideoPlayerSpeed() {
   const {speed, setSpeed} = useVideoPlayerSettings();
