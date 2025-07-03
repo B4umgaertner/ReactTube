@@ -430,7 +430,7 @@ const VideoPlayer = forwardRef<VideoPlayerRefs, VideoPlayerProps<any>>(
           onSeek={_onSeek}
           onError={() => {}}
           onAudioTracks={tracks => {
-            setLanguages(tracks.audioTracks);
+            setLanguages(tracks.audioTracks, props.videoID);
           }}
           props={props.VideoComponentProps}
           // @ts-ignore
