@@ -56,6 +56,13 @@ export default function Drawer({open, onOpen, onClose, hideDrawer}: Props) {
     <TVFocusGuideView autoFocus>
       <Animated.View style={[styles.container, style]}>
         <DrawerItem
+          title={"Search"}
+          onFocus={() => onOpen()}
+          onPress={() => navigation.navigate("Search")}
+          open={open}
+          iconTitle={"search"}
+        />
+        <DrawerItem
           title={"Home"}
           onFocus={() => onOpen()}
           start
@@ -66,7 +73,7 @@ export default function Drawer({open, onOpen, onClose, hideDrawer}: Props) {
           open={open}
           iconTitle={"home"}
         />
-        <DrawerItem
+        {/* <DrawerItem
           title={"Trending"}
           onFocus={() => onOpen()}
           onPress={navigationWrapper(() =>
@@ -75,14 +82,7 @@ export default function Drawer({open, onOpen, onClose, hideDrawer}: Props) {
           )}
           open={open}
           iconTitle={"trending-up"}
-        />
-        <DrawerItem
-          title={"Search"}
-          onFocus={() => onOpen()}
-          onPress={() => navigation.navigate("Search")}
-          open={open}
-          iconTitle={"search"}
-        />
+        /> */}
         {account?.loginData?.accounts?.length > 0 ? (
           <>
             <DrawerItem
@@ -96,16 +96,6 @@ export default function Drawer({open, onOpen, onClose, hideDrawer}: Props) {
               iconTitle={"subscriptions"}
             />
             <DrawerItem
-              title={"History"}
-              onFocus={() => onOpen()}
-              onPress={() =>
-                // @ts-ignore TODO: fix
-                navigation.navigate("Home", {screen: "HistoryScreen"})
-              }
-              open={open}
-              iconTitle={"history"}
-            />
-            <DrawerItem
               title={"Library"}
               onFocus={() => onOpen()}
               onPress={() =>
@@ -117,6 +107,16 @@ export default function Drawer({open, onOpen, onClose, hideDrawer}: Props) {
               iconType={"ionicon"}
             />
             <DrawerItem
+              title={"History"}
+              onFocus={() => onOpen()}
+              onPress={() =>
+                // @ts-ignore TODO: fix
+                navigation.navigate("Home", {screen: "HistoryScreen"})
+              }
+              open={open}
+              iconTitle={"history"}
+            />
+            {/* <DrawerItem
               title={"MyYoutube"}
               onFocus={() => onOpen()}
               onPress={() =>
@@ -126,7 +126,7 @@ export default function Drawer({open, onOpen, onClose, hideDrawer}: Props) {
               open={open}
               iconTitle={"youtube-tv"}
               iconType={"material-community"}
-            />
+            /> */}
           </>
         ) : (
           <DrawerItem
