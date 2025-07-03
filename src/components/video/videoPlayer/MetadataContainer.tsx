@@ -63,6 +63,11 @@ export default function MetadataContainer({
             iconName={"speed"}
             onPress={() => navigation.navigate("VideoPlayerPlaySpeed")}
           />
+          <MetadataButton
+            iconType={"MaterialIcons"}
+            iconName={"audiotrack"}
+            onPress={() => navigation.navigate("VideoPlayerLanguage")}
+          />
         </View>
       </View>
     </TVFocusGuideView>
